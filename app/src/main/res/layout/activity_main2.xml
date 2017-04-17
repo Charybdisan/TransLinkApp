@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.charyb.translinkstatus.Main2Activity">
+
+    <!-- Background -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:src="@drawable/bg"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Back"
+                android:layout_marginRight="5dp"
+                android:textColor="#FFF"
+                android:background="@drawable/round_rect_shape_blue"
+                android:id="@+id/backButton">
+            </Button>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberSigned"
+                android:id="@+id/busStop"
+                android:text=""
+                android:ems="10"
+                android:textSize="15sp"
+                android:hint="Enter Bus Stop #"
+                android:textColorHint="#AAFFFFFF"
+                android:paddingLeft="10dp"
+                android:background="@drawable/round_rect_shape_white"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:textCursorDrawable="@drawable/white_cursor"
+                android:textColor="#FFF"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Add"
+                android:layout_marginLeft="5dp"
+                android:textColor="#FFF"
+                android:background="@drawable/round_rect_shape_blue"
+                android:id="@+id/addButton">
+            </Button>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"
+
+            android:id="@+id/scroll"
+            android:fillViewport="false">
+            <!-- Contains list of buses and their corresponding names -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/savedBusList">
+                <!-- Bus -->
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout> <!-- outer -->
+
+
+</RelativeLayout>
+
+
